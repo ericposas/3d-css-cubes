@@ -1,0 +1,41 @@
+.cube{
+  display: block;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.cube-side{
+  display: block;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border: 2px solid #FFF;
+  /*
+  background-image: url(texture/S5D%20Cube.jpg);
+  background-size: contain;
+  */
+}
+
+.left{
+  transform: rotateY(-90deg) translateZ(1em);
+}
+
+.right{
+  transform: rotateY(90deg) translateZ(1em);
+}
+
+.bottom{
+  transform: rotateX(90deg) translateZ(1em);
+}
+
+.top{
+  transform: rotateX(-90deg) translateZ(1em);
+}
+
+.front{
+  transform: translateZ(1em);
+}
+
+.back{
+  transform: translateZ(-1em);
+}
